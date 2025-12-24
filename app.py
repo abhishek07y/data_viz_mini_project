@@ -8,7 +8,7 @@ st.set_page_config(layout="wide")
 df=pd.read_csv('india.csv')
 list_of_state=list(df['State'].unique())
 list_of_state.insert(0,'Overall India')
-# st.title("INDIA CENSUS 2011 VISULIZATION")
+# st.title("INDIAn CENSUS 2011 VISULIZATION")
 st.sidebar.markdown(
     """
     <h2 style='color:#ff4b4b;'>🔍 Filters </h2>
@@ -95,6 +95,7 @@ if plot:
             mapbox_style="carto-positron"
         )
         st.plotly_chart(fig, use_container_width=True)
+
 
 
 
